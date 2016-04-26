@@ -14,12 +14,12 @@ The run_analysis.R will do the following:
 The dataset includes the following files:
 
 1. features.txt -- a plain text file that lists all the features used in the experiment.
-2. features_info.txt -- Shows information about the variables used on the feature vector.
-3. activity_labels.txt -- Links the class labels with their activity name.
-4. train/X_train.txt -- Training set.
-5. train/y_train.txt -- Training labels.
-6. test/X_test.txt -- Test set.
-7. test/y_test.txt -- Test labels.
+2. features_info.txt -- file which shows information about the variables used on the feature vector.
+3. activity_labels.txt -- file contains data that inks the class labels with their activity name.
+4. train/X_train.txt -- plain text file that contains the training data set.
+5. train/y_train.txt -- file which contains the training labels.
+6. test/X_test.txt -- file that has the test data set.
+7. test/y_test.txt -- text file which has the test labels.
 8. train/subject_train.txt -- Each row of this file identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. This file is available for the train and test data.
 9. train/Inertial Signals/total_acc_x_train_txt -- The acceleration signal from the smartphone accelerometer X axis in standard gravity units 'g'.  Every row shows a 128 element vector.  The same description applies for the 'total_acc_x_train.txt' and 'total_acc_z_train.txt' files for the Y and Z axis.
 10. train/Inertial Signals/body_acc_x_train.txt -- The body acceleration signal obtained by subtracting the gravity from the total acceleration.
