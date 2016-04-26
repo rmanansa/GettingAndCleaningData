@@ -25,13 +25,21 @@ for (i in 1:nrow(activity_labels)) {
 }
 
 ## Put appropriate labels to the data set with descriptive activity names
-labeledX <- cbind(mergedY, mergedX)
-labeledMeanAndStd <- cbind(mergedY, meanAndStd)
+##labeledX <- cbind(mergedY, mergedX)
+#labeledMeanAndStd <- cbind(mergedY, meanAndStd)
+names(meanAndStd) = gsub('\\(|\\)',"",names(meanAndStd), perl = TRUE)
+names(meanAndStd) = gsub('Acc',"Acceleration",names(meanAndStd))
+names(meanAndStd) <- gsub('GyroJerk',"AngularAcceleration",names(meanAndStd))
+names(meanAndStd) <- gsub('Gyro',"AngularSpeed",names(meanAndStd))
+names(meanAndStd) <- gsub('Mag',"Magnitude",names(meanAndStd))
+names(meanAndStd) <- gsub('^t',"TimeDomain.",names(meanAndStd))
+names(meanAndStd) <- gsub('^f',"FrequencyDomain.",names(meanAndStd))
+
 
 ## Create another independent tidy data set with the average of each 
 ## variable for each activity and each subject.
 testSubject <- read.table("./data/UCI HAR Dataset/test/subject_test.txt", col.names = c('Subject'))
 trainSubject <- read.table("./data/UCI HAR Dataset/train/subject_train.txt", col.names = c('Subject'))
 mergedSubjectTestTrain <- rbind(testSubject, trainSubject)
-tidyData <- aggregate(mergedX, by = list(Activities = mergedY[,1], Subject = mergedSubjectTestTrain[,1]), mean)
+tidyData <- aggregate(meanAndStd, by = list(Activities = mergedY[,1], Subject = mergedSubjectTestTrain[,1]), mean)
 write.table(tidyData, file = "./data/GettingAndCleaningData/tidy_data.txt", row.names = FALSE)
