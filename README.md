@@ -12,6 +12,7 @@ The run_analysis.R will do the following:
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 The dataset includes the following files:
+
 1. features.txt -- a plain text file that lists all the features used in the experiment.
 2. features_info.txt -- Shows information about the variables used on the feature vector.
 3. activity_labels.txt -- Links the class labels with their activity name.
