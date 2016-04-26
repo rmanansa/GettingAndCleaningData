@@ -3,7 +3,7 @@ The purpose of this project is to demonstrate one's ability to collect, work wit
 
 This assignment requires an R script, run_analysis.R, and the data set that needs to be converted to tidy data.
 
-The run_analysis.R will do the following:
+##The run_analysis.R will do the following:
 
 1. Merges the traiing and the test sets to create one data set.
 2. Extracts only the measurements on the mean and standard deviation for each measurement.
@@ -11,7 +11,7 @@ The run_analysis.R will do the following:
 4. Appropriately labels the data set with the descriptive variable names.
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-The dataset includes the following files:
+##The dataset includes the following files:
 
 1. features.txt -- a plain text file that lists all the features used in the experiment.
 2. features_info.txt -- file which shows information about the variables used on the feature vector.
