@@ -72,3 +72,9 @@ angle(): Angle between to vectors.
 
 Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
 
+# Process Taken to Tidy Data
+1. Merge the training and test datasets into one dataset.
+2. Extract the measurement on the mean and standard deviation for each measurement.
+3. Use descriptive activity names to name the activities in the dataset.
+4. Appropriately label the dataset with descriptive variable names.
+5. Create a tidy dataset with the average of each variable for each activity and each subject.
