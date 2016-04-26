@@ -30,7 +30,7 @@ Notes:
 - Each feature vector is a row on the text file.
 
 ##Running the Script
-1. Download/pull from repository 
+1. Download/pull from repository https://github.com/rmanansa/GettingAndCleaningData.git
 2. Open R Studio 
 3. Run following commands in R Studio
 source("run_analysis.R")
