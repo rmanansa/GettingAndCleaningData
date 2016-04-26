@@ -28,3 +28,9 @@ This assignment requires an R script, run_analysis.R, and the data set that need
 Notes:
 - Features are normalized and bounded within [-1,1]
 - Each feature vector is a row on the text file.
+
+##Running the Script
+1. Download/pull from repository 
+2. Open R Studio 
+3. Run following commands in R Studio
+source("run_analysis.R")
